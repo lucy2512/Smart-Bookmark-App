@@ -88,6 +88,9 @@ export default function Dashboard() {
       if (domain.includes("google.com"))
         return "https://www.google.com/favicon.ico"
 
+      if (domain.includes("instagram.com"))
+        return "https://www.instagram.com/favicon.ico"
+
       return `${new URL(link).origin}/favicon.ico`
     } catch {
       return null
